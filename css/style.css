@@ -127,8 +127,14 @@ footer {
     height: auto;
   }
 
+  header #logo{
+    display: block;
+    margin: 0 auto;
+  }
+
   main {
     height: auto;
+    margin-top: 150px;
     grid-template-columns: repeat(1, 1fr);
   }
 }
