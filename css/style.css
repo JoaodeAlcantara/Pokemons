@@ -6,13 +6,20 @@
   box-sizing: border-box;
   font-family: "Poppins", system-ui;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 header {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
   background-color: #0d1b2a;
   color: white;
   display: flex;
   height: auto;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 header #logo {
@@ -47,6 +54,9 @@ main {
   height: auto;
   align-content: space-between;
   grid-template-columns: repeat(3, 1fr);
+  margin-top: 90px;
+  margin-inline-start: 5px;
+  margin-inline-end: 5px;
 }
 
 main .section {
@@ -54,7 +64,6 @@ main .section {
   padding: 10px;
   border-radius: 15px;
   margin-block: 15px;
-
 }
 
 main .section h2 {
@@ -96,6 +105,21 @@ footer {
   height: 5vh;
 }
 
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px;
+}
+::-webkit-scrollbar-track{
+  background: gainsboro;
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
 @media only screen and (max-width: 600px) {
   header {
     flex-direction: column;
