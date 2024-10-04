@@ -11,6 +11,10 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  height: 100%;
+}
+
 header {
   position: fixed;
   z-index: 1;
@@ -73,7 +77,11 @@ header .filter-container .check {
   background-color: #888;
   font-weight: bold;
 }
-
+header .error{
+  display: none;
+  text-align: center;
+  color: red;
+}
 header form {
   height: 40px;
   margin: 10px;
@@ -97,7 +105,7 @@ header form button {
 main {
   display: grid;
   gap: 30px;
-  height: auto;
+  min-height: 100vh;
   align-content: space-between;
   grid-template-columns: repeat(3, 1fr);
   margin-top: 90px;
@@ -148,8 +156,8 @@ footer {
   background-color: #0d1b2a;
   color: white;
   text-align: center;
-  margin-top: auto;
-  height: 5vh;
+  margin-bottom: auto 0;
+  height: auto;
 }
 
 ::-webkit-scrollbar {
