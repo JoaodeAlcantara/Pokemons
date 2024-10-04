@@ -17,15 +17,43 @@
 <body>
     <header>
         <img src="img/logo.png" id="logo">
-        <form id="formulario">
-            <input type="text" placeholder="Nome do pokemon">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+        <i class="fa-solid fa-bars" id="menu"></i>
+
+        <nav id="nav">
+            <p>Pesquisar:</p>
+            <form id="formulario">
+                <input type="text" placeholder="Nome do pokemon">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+            <div class="filter-container">
+                <p>Filtrar por tipo:</p> <br>
+                <button id="all">Todos</button>
+                <button class="filtro">Normal</button>
+                <button class="filtro">Fire</button>
+                <button class="filtro">Water</button>
+                <button class="filtro">Grass</button>
+                <button class="filtro">Flying</button>
+                <button class="filtro">Fighting</button>
+                <button class="filtro">Poison</button>
+                <button class="filtro">Electric</button>
+                <button class="filtro">Ground</button>
+                <button class="filtro">Rock</button>
+                <button class="filtro">Psychic</button>
+                <button class="filtro">Ice</button>
+                <button class="filtro">Bug</button>
+                <button class="filtro">Ghost</button>
+                <button class="filtro">Steel</button>
+                <button class="filtro">Dragon</button>
+                <button class="filtro">Dark</button>
+                <button class="filtro">Fairy</button>
+            </div>
+            <button id="filtrar">filtrtar</button>
+        </nav>
     </header>
     <main>
-        
+
     </main>
-    <button id="verMais">Ver Mais</button>
+    <button id="verMais">Ver Outros</button>
     <footer>
         &copy; Pokemons
     </footer>
